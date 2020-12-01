@@ -13,15 +13,12 @@ let countDownMsg = 'Happy<br>New Year';
 for (let num = countDownStart; num > countDownEnd; num--) {
     let timeout = 1000 * (10 - num);
     setTimeout(() => {
+        countDownContainer.style.display = 'none';
+        messageContainer.style.display = 'flex';
+        messageContainer.innerHTML = countDownMsg;
+    }, 1000 * countDownStart, setTimeout(() => {
         countDownContainer.innerText = num;
-        if (num === 1) {
-            setTimeout(() => {
-                countDownContainer.style.display = 'none';
-                messageContainer.style.display = 'flex';
-                messageContainer.innerHTML = countDownMsg;
-            }, 1000);
-        }
-    }, timeout);
+    }, timeout));
 }
 
 //appending container to body.
