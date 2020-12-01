@@ -5,41 +5,40 @@ let messageContainer = document.createElement('div');
 messageContainer.setAttribute('class', 'msg-container');
 
 //Count down Config.
-let countDownStart = 10;
-let countDownEnd = 0;
+let countDown = 10;
 let countDownMsg = 'Happy<br>New Year';
 
 //Counting down execution.
 setTimeout(() => {
-    countDownContainer.innerText = countDownStart;
-    countDownStart--;
+    countDownContainer.innerText = countDown;
+    countDown--;
     setTimeout(() => {
-        countDownContainer.innerText = countDownStart;
-        countDownStart--;
+        countDownContainer.innerText = countDown;
+        countDown--;
         setTimeout(() => {
-            countDownContainer.innerText = countDownStart;
-            countDownStart--;
+            countDownContainer.innerText = countDown;
+            countDown--;
             setTimeout(() => {
-                countDownContainer.innerText = countDownStart;
-                countDownStart--;
+                countDownContainer.innerText = countDown;
+                countDown--;
                 setTimeout(() => {
-                    countDownContainer.innerText = countDownStart;
-                    countDownStart--;
+                    countDownContainer.innerText = countDown;
+                    countDown--;
                     setTimeout(() => {
-                        countDownContainer.innerText = countDownStart;
-                        countDownStart--;
+                        countDownContainer.innerText = countDown;
+                        countDown--;
                         setTimeout(() => {
-                            countDownContainer.innerText = countDownStart;
-                            countDownStart--;
+                            countDownContainer.innerText = countDown;
+                            countDown--;
                             setTimeout(() => {
-                                countDownContainer.innerText = countDownStart;
-                                countDownStart--;
+                                countDownContainer.innerText = countDown;
+                                countDown--;
                                 setTimeout(() => {
-                                    countDownContainer.innerText = countDownStart;
-                                    countDownStart--;
+                                    countDownContainer.innerText = countDown;
+                                    countDown--;
                                     setTimeout(() => {
-                                        countDownContainer.innerText = countDownStart;
-                                        countDownStart--;
+                                        countDownContainer.innerText = countDown;
+                                        countDown--;
                                         setTimeout(() => {
                                             countDownContainer.style.display = 'none';
                                             messageContainer.style.display = 'flex';
