@@ -10,16 +10,51 @@ let countDownEnd = 0;
 let countDownMsg = 'Happy<br>New Year';
 
 //Counting down execution.
-for (let num = countDownStart; num > countDownEnd; num--) {
-    let timeout = 1000 * (10 - num);
+setTimeout(() => {
+    countDownContainer.innerText = countDownStart;
+    countDownStart--;
     setTimeout(() => {
-        countDownContainer.style.display = 'none';
-        messageContainer.style.display = 'flex';
-        messageContainer.innerHTML = countDownMsg;
-    }, 1000 * countDownStart, setTimeout(() => {
-        countDownContainer.innerText = num;
-    }, timeout));
-}
+        countDownContainer.innerText = countDownStart;
+        countDownStart--;
+        setTimeout(() => {
+            countDownContainer.innerText = countDownStart;
+            countDownStart--;
+            setTimeout(() => {
+                countDownContainer.innerText = countDownStart;
+                countDownStart--;
+                setTimeout(() => {
+                    countDownContainer.innerText = countDownStart;
+                    countDownStart--;
+                    setTimeout(() => {
+                        countDownContainer.innerText = countDownStart;
+                        countDownStart--;
+                        setTimeout(() => {
+                            countDownContainer.innerText = countDownStart;
+                            countDownStart--;
+                            setTimeout(() => {
+                                countDownContainer.innerText = countDownStart;
+                                countDownStart--;
+                                setTimeout(() => {
+                                    countDownContainer.innerText = countDownStart;
+                                    countDownStart--;
+                                    setTimeout(() => {
+                                        countDownContainer.innerText = countDownStart;
+                                        countDownStart--;
+                                        setTimeout(() => {
+                                            countDownContainer.style.display = 'none';
+                                            messageContainer.style.display = 'flex';
+                                            messageContainer.innerHTML = countDownMsg;
+                                        }, 1000);
+                                    }, 1000)
+                                }, 1000)
+                            }, 1000)
+                        }, 1000)
+                    }, 1000)
+                }, 1000)
+            }, 1000)
+        }, 1000)
+    }, 1000)
+}, 0)
 
 //appending container to body.
 document.body.append(countDownContainer, messageContainer);
